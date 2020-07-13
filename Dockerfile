@@ -1,6 +1,6 @@
 FROM python:3-alpine
 LABEL maintainer Zach Valenta
-ARG project_name=docker-flask-sqlite-skeleton
+ARG project_name=docker-flask-sqlite-config
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 WORKDIR /$project_name

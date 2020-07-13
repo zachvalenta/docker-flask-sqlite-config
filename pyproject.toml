@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "docker-flask-sqlite-skeleton"
+name = "docker-flask-sqlite-config"
 version = "0.1.0"
 description = ""
 authors = ["zachvalenta <zjv5002@gmail.com>"]

@@ -4,6 +4,7 @@ Bare bones implementation of:
 
 * a Flask app
 * talking to a database (SQLite)
+* using multiple environments and secrets
 * Dockerized
 
 ## how to run?

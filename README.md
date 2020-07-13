@@ -37,12 +37,14 @@ make flask
 
 ## FYI
 
-I have a few other projects like this:
+Here's the full list of projects I have in this vein:
 
-* [Docker + Flask](https://github.com/zachvalenta/docker-flask)
-* [Docker + Flask + Postgres](https://github.com/zachvalenta/docker-flask-postgres)
-* [Docker + Flask + SQLite + gunicorn](https://github.com/zachvalenta/docker-flask-sqlite-gunicorn)
-* [Docker + Flask + configuration management](https://github.com/zachvalenta/docker-flask-envs-secrets)
+* [base: Docker + Flask](https://github.com/zachvalenta/docker-flask)
+* [base + config management](https://github.com/zachvalenta/docker-flask-envs-secrets)
+* [base + config management + SQLite](https://github.com/zachvalenta/docker-flask-sqlite)
+* [base + SQLite](https://github.com/zachvalenta/docker-flask-sqlite)
+* [base + SQLite + gunicorn](https://github.com/zachvalenta/docker-flask-sqlite-gunicorn)
+* [base + Postgres](https://github.com/zachvalenta/docker-flask-postgres)
 
 Here are the Docker versions I'm working with:
 

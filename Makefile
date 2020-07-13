@@ -99,7 +99,7 @@ export:
 #
 
 flask:
-	poetry run flask run
+	export "SECRET_KEY=$(key)"; poetry run flask run
 
 #
 # 📦 DEPENDENCIES

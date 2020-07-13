@@ -32,9 +32,9 @@ help:
 	@echo
 	@echo "📦 DEPENDENCIES"
 	@echo
-	@echo "export:      export Poetry dependencies to requirements.txt"
-	@echo "env:         show environment info"
-	@echo "deps:        list prod dependencies"
+	@echo "dep-ex:      export Poetry dependencies to requirements.txt"
+	@echo "dep-dir:     show environment info"
+	@echo "dep-list:    list prod dependencies"
 	@echo
 
 #
@@ -105,8 +105,11 @@ flask:
 # 📦 DEPENDENCIES
 #
 
-env:
+dep-ex:
+	poetry export -f requirements.txt > requirements.txt
+
+dep-dir:
 	poetry env info
 
-deps:
+dep-list:
 	poetry show --tree --no-dev

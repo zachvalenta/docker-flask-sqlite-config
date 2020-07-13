@@ -37,7 +37,10 @@ ROUTES
 
 @app.route('/healthcheck')
 def index():
-    return "docker-flask-sqlite-config runnning", 200
+    msg = f"docker-flask-sqlite-config running from: *** {os.getenv('ENV')} ***"
+    if os.getenv("ENV") == "prod":
+        return f"{msg} and the secret key is *** {os.getenv('SECRET_KEY')} ***", 200
+    return msg, 200
 
 @app.route("/get-things")
 def read():

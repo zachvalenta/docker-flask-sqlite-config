@@ -3,9 +3,11 @@ name = "docker-flask-sqlite-config"
 
 help:
 	@echo
-	@echo "🍶 FLASK"
+	@echo "🌓 ENVIRONMENT"
 	@echo
-	@echo "flask:       start app"
+	@echo "env-list:    show current environment"
+	@echo "env-dev:     link env var for dev environment"
+	@echo "env-prod:    link env var for production environment"
 	@echo
 	@echo "🚢 DOCKER"
 	@echo
@@ -24,6 +26,10 @@ help:
 	@echo "get:         get all things"
 	@echo "post:        create one thing"
 	@echo
+	@echo "🍶 FLASK"
+	@echo
+	@echo "flask:       start app"
+	@echo
 	@echo "📦 DEPENDENCIES"
 	@echo
 	@echo "export:      export Poetry dependencies to requirements.txt"
@@ -32,11 +38,17 @@ help:
 	@echo
 
 #
-# 🍶 FLASK
+# 🌓 ENVIRONMENT
 #
 
-flask:
-	poetry run flask run
+env-list:
+	ls -al | grep '>'
+
+env-dev:
+	ln -sf .env.dev .env
+
+env-prod:
+	ln -sf .env.prod .env
 
 #
 # 🚢 DOCKER
@@ -81,6 +93,13 @@ post:
 
 export:
 	poetry export -f requirements.txt > requirements.txt
+
+#
+# 🍶 FLASK
+#
+
+flask:
+	poetry run flask run
 
 #
 # 📦 DEPENDENCIES
